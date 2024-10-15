@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Happy Birthday Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Tarumi's Birthday Website!</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#celebrate">Celebrate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h2>Happy Birthday Tarumi!</h2>
+      <p>
+        This is a special website to celebrate Tarumi's birthday. Let's make it
+        a wonderful day with fun activities and heartfelt messages.
+      </p>
+      <button onclick="displayMessage()">Click for a Surprise</button>
+      <p id="surpriseMessage"></p>
+    </section>
+
+    <section id="about">
+      <h2>About Tarumi</h2>
+      <p>
+        Tarumi is a wonderful friend, and today is the perfect day to celebrate
+        all the joy she brings to our lives. Let's celebrate her awesomeness!
+      </p>
+    </section>
+
+    <section id="celebrate">
+      <h2>Ways to Celebrate</h2>
+      <ul>
+        <li>Send a Birthday Message</li>
+        <li>Plan a Surprise Party</li>
+        <li>Create a Birthday Collage</li>
+        <li>Gift Ideas for Tarumi</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="message">Your Birthday Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="button" onclick="submitForm()">Submit</button>
+        <p id="formResponse"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Tarumi's Birthday Website. All rights reserved.</p>
+    </footer>
+
+    <script src="tarumi.js"></script>
+  </body>
+</html>
